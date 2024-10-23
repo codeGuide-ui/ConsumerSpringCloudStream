@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        userRegistrationConsumer-in-0:
+          destination: test-kafka
+
+      kafka:
+        binder:
+          brokers: localhost:9092
